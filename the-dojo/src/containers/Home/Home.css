@@ -1,0 +1,23 @@
+.content-container {
+    margin-bottom: 30px;
+}
+
+.practice-time {
+    width: 400px;
+    display: inline-block;
+}
+.practice-time, .practice-location {
+    display: inline-block;
+    vertical-align: top;
+}
+.practice-time .practice {
+    margin: 0 50px;
+}
+.practice-time h5 {
+    margin: 10px 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+.practice-time .practice p {
+    margin: 0;
+}

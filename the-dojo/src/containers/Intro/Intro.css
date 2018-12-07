@@ -1,0 +1,35 @@
+.intro-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.intro-container .intro-title {
+    position: relative;
+    margin: auto auto;
+    width: 100%;
+    height: auto;
+    color: transparent;
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    animation: textFadeIn 3s forwards;
+}
+
+@keyframes textFadeIn {
+    0% {
+        text-shadow: 0 0 32px black;
+    }
+    50% {
+        text-shadow: 0 0 0 black;
+    }
+    0% {
+        text-shadow: 0 0 32px black;
+    }
+}
