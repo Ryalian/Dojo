@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Intro from "./containers/Intro/Intro";
 import Navbar from "./components/Navbar";
 import Home from "./containers/Home/Home";
+import About from "./containers/About/About";
 
 import "./App.css";
 
-const About = () => <h2>About the Dojo</h2>;
 const Payment = () => <h2>Join Payment</h2>;
 const FAQ = () => <h2>FAQ</h2>;
 const Links = () => <h2>Links</h2>;

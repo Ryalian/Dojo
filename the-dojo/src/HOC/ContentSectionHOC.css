@@ -1,5 +1,9 @@
-.content-section picture {
-    display: flex;
+.content-section {
+    min-width: 800px;
+}
+
+.content-section .picture {
+    position: relative;
     height: 400px;
     width: 100%;
     justify-content: center;
@@ -7,13 +11,14 @@
     overflow: hidden;
 }
 
-.content-section picture img{
+.content-section .picture img{
     flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
 }
 
 .content-section h3 {
+    font-size: 24px;
     font-family: 'Playfair Display', serif;
 }
 

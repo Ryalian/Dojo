@@ -10,19 +10,21 @@ const practiceList = [
 export default () => (
     <Fragment>
         <h3>Practice Details</h3>
-        <div className="practice-time">
-            {
-                practiceList.map((prac, idx) => (
-                    <div className="practice" key={idx}>
-                        <h5>{ prac.day }</h5>
-                        <p>{ `Regular Practice: ${prac.reg}` }</p>
-                        <p>{ `Advanced Practice: ${prac.adv}` }</p>
-                    </div>
-                ))
-            }
-        </div>
-        <div className="practice-location">
-            <PracticeLocation />
+        <div className="practice-detail">
+            <div className="practice-time">
+                {
+                    practiceList.map((prac, idx) => (
+                        <div className="practice" key={idx}>
+                            <h5>{ prac.day }</h5>
+                            <p>{ `Regular Practice: ${prac.reg}` }</p>
+                            <p>{ `Advanced Practice: ${prac.adv}` }</p>
+                        </div>
+                    ))
+                }
+            </div>
+            <div className="practice-location">
+                <PracticeLocation />
+            </div>
         </div>
     </Fragment>
 )

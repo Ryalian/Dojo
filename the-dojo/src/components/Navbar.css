@@ -1,6 +1,7 @@
 .nav-container {
     height: 100%;
     position: fixed;
+    z-index: 9;
 }
 
 .nav-content {
@@ -10,11 +11,12 @@
 
 .nav-title {
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .nav-container nav {
-    margin-top: 25px;
+    margin-top: 10px;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -40,6 +42,6 @@
     color: black;
 }
 
-.nav-container nav a:hover {
+.nav-container nav a:hover, .nav-container nav .current-page a {
     font-weight: lighter;
 }

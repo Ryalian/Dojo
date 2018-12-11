@@ -7,7 +7,6 @@ export default class Navbar extends PureComponent {
     constructor(props) {
         super(props);
 
-
         this.state = {
             pageLists: [
                 { path: '/', name: 'Home' },
@@ -16,15 +15,23 @@ export default class Navbar extends PureComponent {
                 { path: '/faq', name: 'FAQ' },
                 { path: '/links', name: 'Links' },
                 { path: '/contact', name: 'Contact' },
-            ]
+            ],
+            currentPath: window.location.pathname
         }
+
+    }
+
+    onChangePath(targetPath) {
+        this.setState({
+            currentPath: targetPath
+        })
     }
 
     renderLinks() {
         return this.state.pageLists.map((page, idx) => {
             return (
-                <li key={idx}>
-                    <Link to={page.path}>{page.name}</Link>
+                <li key={idx} className={this.state.currentPath === page.path? "current-page": ""}>
+                    <Link to={page.path} onClick={ () => {this.onChangePath(page.path)} }>{page.name}</Link>
                 </li>
             )
         })

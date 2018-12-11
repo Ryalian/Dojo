@@ -19,6 +19,7 @@
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 48px;
+    font-weight: bold;
     animation: textFadeIn 3s forwards;
 }
 
