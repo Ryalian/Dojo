@@ -1,0 +1,13 @@
+
+.contact-container {
+    padding-bottom: 100px;
+}
+
+.content-section .content-section-container p {
+    padding: 0;
+    line-height: 45px;
+}
+
+.contact-info {
+    line-height: 20px !important;
+}

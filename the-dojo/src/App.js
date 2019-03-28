@@ -3,48 +3,43 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Intro from "./containers/Intro/Intro";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 import Home from "./containers/Home/Home";
 import About from "./containers/About/About";
+import Membership from "./containers/Membership/Membership";
+import Schedule from "./containers/Schedule/Schedule";
+import Contact from "./containers/Contact/Contact";
+
+import ContentSection from "./HOC/ContentSectionHOC";
 
 import "./App.css";
 
-const Payment = () => <h2>Join Payment</h2>;
-const FAQ = () => <h2>FAQ</h2>;
-const Links = () => <h2>Links</h2>;
-const Contact = () => <h2>Contact</h2>;
+const News = () => <h2>Coming Soon</h2>;
 
 class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      showContent: false
-    };
   }
-
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({showContent: true});
-    }, 3000);
-  }
-
+  
   render() {
     return (
       <Router>
         <div className="app-body">
-          {!this.state.showContent && <Intro />}
-          <Navbar />
+          { ContentSection(Navbar) }
 
-          { this.state.showContent &&
-            <div className="app-content">
-              <Route path="/" exact component={Home} />
-              <Route path="/about/" component={About} />
-              <Route path="/join/" component={Payment} />
-              <Route path="/faq/" component={FAQ} />
-              <Route path="/links/" component={Links} />
-              <Route path="/contact/" component={Contact} />
-            </div>
-          }
+          <div className="app-content">
+            <Route path="/" exact component={Home} />
+            <Route path="/news" exact component={Home} />
+            <Route path="/about/" component={About} />
+            <Route path="/membership/" component={Membership} />
+            <Route path="/schedule/" component={Schedule} />
+            <Route path="/news/" component={News} />
+            <Route path="/contact/" component={Contact} />
+          </div>
+
+          { ContentSection(Footer) }
         </div>
       </Router>
     )

@@ -1,5 +1,27 @@
 .content-section {
-    min-width: 800px;
+    min-width: 1000px;
+}
+.content-section.blue-background {
+    background-color: #152f60;
+    color: white;
+}
+
+.content-section .content-section-container, .content-section .content-section-container-lg {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+    z-index: 5;
+}
+
+.content-section .content-section-body {
+    width: 800px;
+    margin: 30px auto 0;
+    z-index: 5;
+}
+
+
+.content-section .content-section-body p {
+    padding: 0;
 }
 
 .content-section .picture {
@@ -19,10 +41,8 @@
 
 .content-section h3 {
     font-size: 24px;
-    font-family: 'Playfair Display', serif;
 }
 
 .content-section p {
     padding: 0 20px;
-    font-family: 'Open Sans Condensed', sans-serif;
 }

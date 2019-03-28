@@ -7,7 +7,6 @@
 }
 .practice-detail h5  {
     margin: 10px 0;
-    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
 }
 .practice-detail p {
@@ -27,4 +26,53 @@
 .practice-location a {
     display: block;
     margin: 10px 20px;
+}
+
+.blue-background table .table-title {
+    font-size: 22px;
+    text-align: left;
+}
+.blue-background table .table-header {
+    border-bottom: white 3px solid;
+    text-align: left;
+}
+
+.home-container thead tr {
+    height: 50px;
+}
+
+.blue-background table th {
+    height: 20px;
+    width: 220px;
+}
+.blue-background table td {
+    height: 20px;
+    width: 220px;
+}
+.blue-background table {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-spacing: 15px 15px;
+}
+
+.blue-background .fade-text {
+    color: #b4c8ef;
+}
+
+.home-schedule-footer-left {
+    display: inline-block;
+    width: 235px;
+    margin-left: 15px;
+}
+.home-schedule-footer-left a {
+    font-size: 14px;
+    color: #b4c8ef;
+    border-bottom: #b4c8ef 1px solid;
+}
+.home-schedule-footer-left a:hover {
+    color: #fff;
+    border-bottom: #fff 1px solid;
+}
+.home-schedule-footer-left, .home-schedule-footer-right {
+    display: inline-block;
 }

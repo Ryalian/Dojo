@@ -1,0 +1,46 @@
+.gallery {
+    position: relative;
+}
+.gallery .prev-btn {
+    left: 20px;
+}
+.gallery .next-btn {
+    right: 20px;
+}
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    min-width: 0 !important;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translate(0, -50%);
+}
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.gallery button:hover #Arrow{
+    stroke: #000000
+}
+.gallery button svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-list-container {
+    height: 490px;
+}
+
+.section-list-container .backgrounded-section {
+    height: 100%;
+}
+
+.gallery-bullet-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -24px)
+}

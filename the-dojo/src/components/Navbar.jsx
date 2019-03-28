@@ -1,9 +1,9 @@
-import React, { PureComponent} from 'react';
-import { Link } from "react-router-dom";
+import React, { PureComponent } from 'react';
+import { Link, withRouter } from "react-router-dom";
 
 import "./Navbar.css"
 
-export default class Navbar extends PureComponent {
+class Navbar extends PureComponent {
     constructor(props) {
         super(props);
 
@@ -11,20 +11,23 @@ export default class Navbar extends PureComponent {
             pageLists: [
                 { path: '/', name: 'Home' },
                 { path: '/about', name: 'About' },
-                { path: '/join', name: 'Join Payment' },
-                { path: '/faq', name: 'FAQ' },
-                { path: '/links', name: 'Links' },
+                { path: '/membership', name: 'Membership' },
+                { path: '/schedule', name: 'Schedule' },
+                // { path: '/news', name: 'News' },
                 { path: '/contact', name: 'Contact' },
             ],
             currentPath: window.location.pathname
         }
-
     }
 
     onChangePath(targetPath) {
         this.setState({
             currentPath: targetPath
         })
+    }
+
+    componentDidUpdate() {
+        this.setState({currentPath: window.location.pathname});
     }
 
     renderLinks() {
@@ -41,7 +44,9 @@ export default class Navbar extends PureComponent {
         return (
             <div className="nav-container">
                 <div className="nav-content">
-                    <div className="nav-title">West LA Kendo Dojo</div>
+                    <div className="nav-title">
+                        <Link to="/" onClick={ () => {this.onChangePath("/")} }>West LA Kendo Dojo</Link>
+                    </div>
                     <nav>
                         <ul>
                             { this.renderLinks() }
@@ -52,3 +57,5 @@ export default class Navbar extends PureComponent {
         )
     }
 }
+
+export default withRouter(Navbar);

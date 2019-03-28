@@ -1,0 +1,7 @@
+.schedule-container a {
+    border-bottom: #000 1px solid;
+}
+.schedule-container a:hover {
+    color: #152f60;
+    border-bottom: #152f60 1px solid;
+}

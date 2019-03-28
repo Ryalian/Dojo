@@ -1,12 +1,64 @@
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 .app-body {
-  display: flex;
-  width: 100vw;
-  min-width: 1000px;
-  height: 100vh;
+  width: 100%;
+  min-width: 1200px;
   padding-bottom: 30px;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
 .app-body .app-content {
   margin: 0 auto;
-  width: 80%;
 }
+
+h2 {
+  margin: 40px 0;
+  font-size: 26px;
+  font-weight: bold !important;
+}
+
+h5 {
+  font-size: 15px;
+  margin: 5px;
+  padding: 0;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+h2, h5, h6, p, table, button, a {
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  min-width: 160px;
+  height: 43px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  border: white 2px solid;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+textarea, select, input, button { outline: none; }

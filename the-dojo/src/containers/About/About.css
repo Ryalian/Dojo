@@ -1,0 +1,48 @@
+.sensei-list.content-section-body {
+    background-color: #152f60;
+    width: 1000px;
+    padding: 60px 0;
+}
+
+.sensei-list h2 {
+    text-align: center;
+    color: white;
+    margin: 0 0 60px;
+}
+
+.sensei-list img {
+    width: 220px;
+}
+
+.sensei-list li {
+    display: inline-block;
+    vertical-align: top;
+    height: 380px;
+    width: 220px;
+    margin: 20px 10px;
+    background-color: white;
+}
+
+.sensei-list h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.sensei-list h4 {
+    margin: 10px 0 20px;
+    font-size: 16px;
+    font-weight: 200;
+}
+.sensei-list h5 {
+    margin: 10px 0;
+    font-weight: 600;
+}
+.sensei-list h5.head-instructor {
+    padding: 0 40px;
+}
+.sensei-list h5,.sensei-list h4,.sensei-list h3 {
+    width: 100%;
+    padding: 0 18px;
+    text-align: center;
+    box-sizing: border-box;
+    color: black;
+}
