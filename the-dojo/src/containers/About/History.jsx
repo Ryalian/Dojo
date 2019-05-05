@@ -1,10 +1,21 @@
 import React, { Fragment } from "react";
+import BackgroundedSection from "../../components/BackgroundedSection";
 
 export default () => (
     <div className="content-section-body">
         <h3>History</h3>
         <p>
-            Since the 1930s, the Japanese Cultural Institute of Sawtelle taught kendo until the cultural animosity of World War II forced Japanese-Americans to shut down all practice of the art. After nearly a decade of inactivity, the West Los Angeles Kendo Dojo was officially founded on October 19th, 1952 . At its birth the dojo had only four kenshi, but membership grew rapidly. The first tournament was held only seven months later, and West LA Dojo became a prominent host for tournaments until the mid 70s. 
+            Since the 1930s, the Japanese Cultural Institute of Sawtelle taught kendo until the cultural animosity of World War II forced Japanese-Americans to shut down all practice of the art.
+        </p>
+        
+        <div className="content-section-container-lg">
+            <BackgroundedSection
+                bgSrc="http://wlakendo.org/assets/about_image.jpg"
+            />
+        </div>
+
+        <p>
+            After nearly a decade of inactivity, the West Los Angeles Kendo Dojo was officially founded on October 19th, 1952 . At its birth the dojo had only four kenshi, but membership grew rapidly. The first tournament was held only seven months later, and West LA Dojo became a prominent host for tournaments until the mid 70s. 
         </p>
 
         <p>

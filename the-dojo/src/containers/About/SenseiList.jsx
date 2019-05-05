@@ -15,7 +15,7 @@ export default class SenseiList extends Component {
                 {name: "Hayato Mitsuishi", kanji: "三石勇人", rank: "5th Dan", position: "", img: "hayato-mitsuishi" },
                 {name: "Goichiro Takayama", kanji: "高山五一郎", rank: "5th Dan", position: "", img: "goichiro-takayama" },
                 {name: "Heejoo Lee", kanji: "李 希柱", rank: "5th Dan", position: "", img: "heejoo-lee" },
-                {name: "Victor Shin", kanji: "申 明學", rank: "4th Dan", position: "", img: "victor-shin" },
+                {name: "Victor Shin", kanji: "申 明學", rank: "5th Dan", position: "", img: "victor-shin" },
                 {name: "Sigeko Nakamura", kanji: "中村繁子", rank: "4th Dan", position: "", img: "shigeko-nakamura" }
             ]
         }

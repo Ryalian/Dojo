@@ -21,7 +21,7 @@ export default class Membership extends Component {
                     <div className="content-section-body">
                         <p>If you have any questions, please feel free to get in touch with us.</p>
                         <h2>New students application and visitors</h2>
-                        <p className="contact-info"><strong>E-mail (preferred): </strong><a href="mailto:vhernandez@vernandez.net">vhernandez@vernandez.net</a></p>
+                        <p className="contact-info"><strong>E-mail (preferred): </strong><a href="mailto:vhernandez@vhernandez.net">vhernandez@vhernandez.net</a></p>
                         <p className="contact-info"><strong>Phone: </strong>(213) 595-8185 Vincent Hernandez</p>
                         <p>We always welcome temporary Kenshi visitors from all around the world.</p>
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import ReactGA from "react-ga";
 
 import Intro from "./containers/Intro/Intro";
 import Navbar from "./components/Navbar";
@@ -14,6 +15,10 @@ import Contact from "./containers/Contact/Contact";
 import ContentSection from "./HOC/ContentSectionHOC";
 
 import "./App.css";
+
+// set up GA
+ReactGA.initialize('UA-137736628-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const News = () => <h2>Coming Soon</h2>;
 

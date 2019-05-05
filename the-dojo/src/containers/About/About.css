@@ -46,3 +46,9 @@
     box-sizing: border-box;
     color: black;
 }
+
+.content-section-container-lg .backgrounded-section {
+    width: 940px;
+    height: 580px;
+    margin: 0 -80px;
+}
