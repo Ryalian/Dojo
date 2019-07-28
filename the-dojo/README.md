@@ -8,3 +8,7 @@ The site is build with create-react-app for building React single page applicati
 In order to put it up online, developer needs to first run build script in the-dojo folder then transfer all the files in 'build' folder into server through sftp.
 
 Notice that the project we originally using nodejs to serve the frontend. However, after discussion we decided to keep the CMS service and only use the generated files. So the nodejs code is just used for development puporse.
+
+Instruction:
+Run 'npm run build' to build static snapshot file for the server
+Run 'npm run start' for local build with hot reload. create-react-app will automatically open localhost:3000 for viewing. Any changes in src folder will refresh the page.
