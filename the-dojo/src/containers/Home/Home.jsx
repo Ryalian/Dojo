@@ -4,6 +4,7 @@ import Gallery from "./Gallery";
 import ContentSection from "../../HOC/ContentSectionHOC";
 import HomeSchedule from "./HomeSchedule";
 import HomeMember from "./HomeMember";
+import HomeNews from './HomeNews';
 
 import "./Home.css";
 
@@ -18,6 +19,7 @@ export default class Home extends PureComponent {
             <div className="content-container home-container">
                 { ContentSection(Gallery) }
                 { ContentSection(HomeSchedule, 'blue-background')}
+                { ContentSection(HomeNews) }
                 { ContentSection(HomeMember, null, { 'margin': '50px'})}
             </div>
         )

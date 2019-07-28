@@ -15,7 +15,7 @@ export default class About extends Component {
 
     render() {
         return (
-            <div>
+            <div className="about-container">
                 <BackgroundedSection
                     title="About West LA Kendo Dojo"
                     bgSrc="http://wlakendo.org/assets/about_hero.jpg"
