@@ -18,7 +18,7 @@ export default class Home extends PureComponent {
         return (
             <div className="content-container home-container">
                 { ContentSection(Gallery) }
-                { ContentSection(HomeSchedule, 'blue-background')}
+                {/* { ContentSection(HomeSchedule, 'blue-background')} */}
                 { ContentSection(HomeNews) }
                 { ContentSection(HomeMember, null, { 'margin': '50px'})}
             </div>

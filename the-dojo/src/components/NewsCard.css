@@ -23,7 +23,31 @@
 }
 .home-news {
     width: 940px;
+    margin: 10px 0;
 }
 .home-news .news-card-container:last-child {
     margin-right: 0;
+}
+.home-news-temp {
+    margin-bottom: 20px;
+}
+.home-news .home-news-temp-schedule, .home-news .home-news-temp-image {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    font-size: 14px;
+    vertical-align: top;
+}
+.home-news .home-news-temp-schedule {
+    padding-right: 15px;
+}
+.home-news .home-news-temp-image img {
+    width: 100%;
+}
+.temp-schedule-item {
+    margin: 20px 0;
+}
+.temp-schedule-item b, .temp-schedule-item div {
+    margin: 10px 0;
 }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "google-spreadsheet": "^2.0.8",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-ga": "^2.5.7",
@@ -26,7 +27,10 @@
   ],
   "postbuild": "react-snap",
   "reactSnapshot": {
-    "snapshotDelay": 300
+    "snapshotDelay": 300,
+    "include": [
+      "/christmas"
+    ]
   },
   "homepage": "/",
   "devDependencies": {

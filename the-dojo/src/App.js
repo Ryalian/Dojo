@@ -11,6 +11,7 @@ import About from "./containers/About/About";
 import Membership from "./containers/Membership/Membership";
 import Schedule from "./containers/Schedule/Schedule";
 import Contact from "./containers/Contact/Contact";
+import Christmas from "./containers/Events/Christmas";
 
 import ContentSection from "./HOC/ContentSectionHOC";
 
@@ -42,6 +43,7 @@ class App extends Component {
             <Route path="/schedule/" component={Schedule} />
             <Route path="/news/" component={News} />
             <Route path="/contact/" component={Contact} />
+            <Route path="/christmas/" component={Christmas} />
           </div>
 
           { ContentSection(Footer) }

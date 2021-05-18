@@ -76,3 +76,20 @@
 .home-schedule-footer-left, .home-schedule-footer-right {
     display: inline-block;
 }
+.news-warning {
+    margin: 30px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: green;
+    color: white;
+}
+
+.breaking-news {
+    position: relative;
+    /* height: 600px; */
+}
+.breaking-news .news-card-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}

@@ -1,6 +1,6 @@
 .sensei-list.content-section-body {
     background-color: #152f60;
-    width: 1000px;
+    width: 1250px;
     padding: 60px 0;
 }
 
@@ -33,7 +33,7 @@
     font-weight: 200;
 }
 .sensei-list h5 {
-    margin: 10px 0;
+    margin: 0;
     font-weight: 600;
 }
 .sensei-list h5.head-instructor {
