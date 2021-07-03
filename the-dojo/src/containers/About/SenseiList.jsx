@@ -8,7 +8,7 @@ export default class SenseiList extends Component {
             senseiList: [
                 {name: "Koichi Suyama", kanji: "陶山晃一", rank: "7th Dan - Kyoshi", rankKanji:"教士七段", position: "", img: "koichi-suyama" },
                 {name: "Kenjun Kasahara", kanji: "笠原賢順", rank: "6th Dan - Renshi", rankKanji:"錬士六段", position: "", img: "kenjun-kasahara" },
-                {name: "Takashi Akiyoshi", kanji: "秋吉 崇", rank: "6th Dan - Renshi", rankKanji:"錬士六段", position: "", img: "Takashi-Akiyoshi" },
+                // {name: "Takashi Akiyoshi", kanji: "秋吉 崇", rank: "6th Dan - Renshi", rankKanji:"錬士六段", position: "", img: "Takashi-Akiyoshi" },
                 {name: "Atsushi Kajioka ", kanji: "梶岡 敦", rank: "6th Dan - Renshi",rankKanji:"錬士六段", position: "", img: "atsushi-kajioka" },
                 {name: "Naohisa Nakada", kanji: "中田直久", rank: "6th Dan", rankKanji:"六段", position: "", img: "naohisa-nakada" },
                 {name: "Akira Banchi", kanji: "番地　章", rank: "6th Dan - Renshi", rankKanji:"錬士六段", position: "Head Instructor (主任教師)", img: "akira-banchi" },

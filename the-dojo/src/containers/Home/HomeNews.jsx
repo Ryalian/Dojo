@@ -3,10 +3,10 @@ import NewsCard from "../../components/NewsCard";
 
 export default (props) => {
     const newsList = [
-        { title: "West LA Dojo is closed due to COVID19 pandemic until further notice", src: "https://www.ut.edu/uploadedImages/Student_Services/Health_and_Wellness_Center/Coronavirus-COVID-19.jpg" },
+        // { title: "West LA Dojo is closed due to COVID19 pandemic until further notice", src: "https://www.ut.edu/uploadedImages/Student_Services/Health_and_Wellness_Center/Coronavirus-COVID-19.jpg" },
         { title: "SCKF Memorial Tournament Senior Div. 1st Place Banchi Sensei", src: "http://wlakendo.org/images/news/memorial_tournament.jpg" },
         { title: "Celebrating Our New 6th Dan Senseis", src: "http://wlakendo.org/images/news/6_dan_cele.jpg" },
-        // { title: "2018 SCKO Christmas Tournament", src: "http://wlakendo.org/images/news/2018_SCKO_christmas.jpg" }
+        { title: "2018 SCKO Christmas Tournament", src: "http://wlakendo.org/images/news/2018_SCKO_christmas.jpg" }
     ];
     return (
         <div className="home-news content-section-container-lg">
@@ -39,7 +39,7 @@ export default (props) => {
                     <h3><b>Practice hours:</b></h3>
                     <div className='temp-schedule-item'>
                         <b>Tuesdays</b>
-                        <div>7:45PM~</div>
+                        <div>7:30PM~</div>
                     </div>
                     <div className='temp-schedule-item'>
                         <b>Saturdays</b>
@@ -52,7 +52,7 @@ export default (props) => {
             </div>
 
             <div>
-                {newsList.map(news => <NewsCard {...news} />)}
+                {newsList.map((news, idx) => <NewsCard {...news} key={idx}/>)}
             </div>
         </div>
     )
